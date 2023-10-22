@@ -1,0 +1,11 @@
+<!-- res/drawable/outline_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="0dp" android:right="0dp" android:top="0dp" android:bottom="0dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="1dp"
+                android:color="#000" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+</layer-list>

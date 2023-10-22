@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.detail.DetailActivity">
+
+    <ImageView
+        android:id="@+id/iv_makanan_detail"
+        android:layout_width="0dp"
+        android:layout_height="196dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ayam_bakar" />
+
+    <TextView
+        android:id="@+id/tv_makanan_detail"
+        style="@style/styleMakananTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_makanan_detail"
+        app:layout_constraintTop_toBottomOf="@+id/iv_makanan_detail"
+        tools:text="Ayam Bakar" />
+
+    <TextView
+        android:id="@+id/tv_harga_detail"
+        style="@style/styleMakananTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_makanan_detail"
+        app:layout_constraintEnd_toEndOf="@+id/iv_makanan_detail"
+        app:layout_constraintTop_toTopOf="@+id/tv_makanan_detail"
+        tools:text="Rp.30.000" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/makanan_deskripsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_harga_detail"
+        app:layout_constraintStart_toStartOf="@+id/tv_makanan_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_makanan_detail"
+        tools:text="sssssssssssssssssssssssssdddddddddddddddddddsss" />
+
+    <View
+        android:id="@+id/line_detail"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginTop="27dp"
+        android:background="#F3F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+
+    <ImageView
+        android:id="@+id/iv_toko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/shop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_detail" />
+
+    <TextView
+        android:id="@+id/tv_lokasi_title"
+        style="@style/styleMakananTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/location_value"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_toko"
+        app:layout_constraintStart_toEndOf="@+id/iv_toko"
+        app:layout_constraintTop_toTopOf="@+id/iv_toko" />
+
+    <TextView
+        android:id="@+id/lokasi_value"
+        style="@style/makanan_deskripsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/inter"
+        tools:text="aaaaaaaahhhhhhhhddddddddddddddddddddddddddddddddddhhhhhhhhhaa"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_desc"
+        app:layout_constraintStart_toStartOf="@+id/tv_lokasi_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lokasi_title" />
+
+    <View
+        android:id="@+id/line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginBottom="17dp"
+        android:background="#F3F3F3"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/addToCart"
+        app:layout_constraintEnd_toEndOf="@+id/addToCart"
+        app:layout_constraintStart_toStartOf="@+id/addToCart">
+
+        <ImageButton
+            android:id="@+id/ib_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/icons8_minus" />
+
+        <TextView
+            android:id="@+id/tv_jumlah"
+            style="@style/styleMakananSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="1" />
+
+        <ImageButton
+            android:id="@+id/ib_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/icons8_plus" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/addToCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/tambah_keranjang"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:src="@drawable/icons8_back__1_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

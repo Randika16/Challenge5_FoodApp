@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEFAFD"
+        android:padding="20dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_cart_food_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fotorandika"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cart_food_title"
+            style="@style/MediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_cart_food_image"
+            app:layout_constraintTop_toTopOf="@+id/iv_cart_food_image"
+            tools:text="Ayam Bakar" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cart_food_price"
+            style="@style/RegularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/cart_food_title"
+            app:layout_constraintTop_toBottomOf="@+id/cart_food_title"
+            tools:text="Rp. 20.000" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cart_food_quantity_title"
+            style="@style/RegularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/quantity_title"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/cart_food_price"
+            app:layout_constraintTop_toBottomOf="@+id/cart_food_price" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cart_food_quantity_value"
+            style="@style/RegularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/quantity_value"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_food_quantity_title"
+            app:layout_constraintStart_toEndOf="@+id/cart_food_quantity_title"
+            app:layout_constraintTop_toTopOf="@+id/cart_food_quantity_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cart_notes"
+            style="@style/RegularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/notes_title"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/cart_food_quantity_title"
+            app:layout_constraintTop_toBottomOf="@+id/cart_food_quantity_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cart_notes_value"
+            style="@style/RegularText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_notes"
+            app:layout_constraintStart_toEndOf="@+id/cart_notes"
+            app:layout_constraintTop_toTopOf="@+id/cart_notes"
+            tools:text="@string/notes_value" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

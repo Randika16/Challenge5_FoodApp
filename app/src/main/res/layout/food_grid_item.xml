@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_makanan_grid"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_nama_grid"
+        style="@style/styleMakananTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_makanan_grid"
+        app:layout_constraintStart_toStartOf="@+id/iv_makanan_grid"
+        app:layout_constraintTop_toBottomOf="@+id/iv_makanan_grid"
+        tools:text="Burger" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_harga_grid"
+        style="@style/styleMakananSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nama_grid"
+        app:layout_constraintStart_toStartOf="@+id/tv_nama_grid"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama_grid"
+        tools:text="Rp. 28.000" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools">-->
+
+    <!--<data>-->
+    <!--    <variable-->
+    <!--        name="itemFood"-->
+    <!--        type="com.example.challenge2_foodapp.data.api.Food" />-->
+
+    <!--    <import type="com.example.challenge2_foodapp.adapter.FoodAdapter" />-->
+    <!--</data>-->
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content">-->
+
+    <!--    <com.google.android.material.imageview.ShapeableImageView-->
+    <!--        android:id="@+id/iv_makanan_grid"-->
+    <!--        android:layout_width="190dp"-->
+    <!--        android:layout_height="190dp"-->
+    <!--        android:adjustViewBounds="true"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        app:setPhoto='@{itemFood.image_url}'-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <com.google.android.material.textview.MaterialTextView-->
+    <!--        android:id="@+id/tv_nama_grid"-->
+    <!--        style="@style/styleMakananTitle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="12dp"-->
+    <!--        android:layout_marginEnd="12dp"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:text="@{itemFood.nama}"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/iv_makanan_grid"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/iv_makanan_grid"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/iv_makanan_grid"-->
+    <!--        tools:text="Burger" />-->
+
+    <!--    <com.google.android.material.textview.MaterialTextView-->
+    <!--        android:id="@+id/tv_harga_grid"-->
+    <!--        style="@style/styleMakananSubtitle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:text="@{itemFood.harga}"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/tv_nama_grid"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/tv_nama_grid"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_nama_grid"-->
+    <!--        tools:text="Rp. 28.000" />-->
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <!--</layout>-->

@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Challenge2_FoodApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Challenge2_FoodApp" parent="Base.Theme.Challenge2_FoodApp" />
+
+    <style name="MediumText">
+
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="RegularText">
+
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="styleMakananTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="styleMakananSubtitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="makanan_deskripsi">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+</resources>
