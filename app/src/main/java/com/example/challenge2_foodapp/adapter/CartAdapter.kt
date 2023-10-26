@@ -14,7 +14,7 @@ import com.google.android.material.imageview.ShapeableImageView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textview.MaterialTextView
 
-class CartAdapter(private val cartList: List<CartEntity>, private val context: Context) :
+class   CartAdapter(private val cartList: List<CartEntity>, private val context: Context) :
     RecyclerView.Adapter<CartAdapter.ViewHolder>() {
 
     private lateinit var onItemClickCallback: OnItemClickCallback

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "77437467209",
+    "project_id": "challenge-5-24180",
+    "storage_bucket": "challenge-5-24180.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77437467209:android:653b1fad97c9fa36ba5d98",
+        "android_client_info": {
+          "package_name": "com.example.challenge2_foodapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMnyykBngWUz0KdlUeXWahafNYqefBmRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
